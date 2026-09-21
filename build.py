@@ -12,7 +12,6 @@ from pathlib import Path
 
 from app.site_generator import render_page
 
-
 DIST = Path("dist")
 
 # Argentina: UTC-3 fijo, sin horario de verano. Offset fijo (en vez de zoneinfo)
