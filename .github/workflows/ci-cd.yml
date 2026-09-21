@@ -31,7 +31,7 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Ruff (lint + formato)
         run: |
-          ruff check . --fix
+          ruff check .
           ruff format --check .
 
   # 2) TEST - ¿hace lo que esperamos?

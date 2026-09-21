@@ -19,6 +19,7 @@ DIST = Path("dist")
 # el horario de verano, pasar a zoneinfo("America/Argentina/Buenos_Aires") + tzdata.
 ARGENTINA = timezone(timedelta(hours=-3), "Argentina (UTC-3)")
 
+
 def main() -> None:
     DIST.mkdir(exist_ok=True)
     commit = (os.environ.get("GITHUB_SHA", "") or "local")[:7]
